@@ -1,4 +1,23 @@
-<<<<<<< HEAD
+
+// import { Alert } from '@mui/material'
+// import { useDispatch, useSelector } from 'react-redux'
+// import { uiActions } from '../features/uiSlice';
+
+// const Notification = ({type,message}) => {
+//     const dispatch = useDispatch();
+//     const notification = useSelector(state => state.ui.notification);
+//     const handleClose =()=>{
+//         dispatch(uiActions.showNotification({
+//             open:false
+//         }))
+//     }
+//   return (
+//     <div>
+//         {notification.open && <Alert onClose={handleClose} severity={type}>{message}</Alert>}
+//     </div>
+//   )
+// }
+
 import React from 'react'
 import { Alert } from '@mui/material'
 import { useDispatch, useSelector } from 'react-redux'
@@ -19,26 +38,4 @@ const Notification = ({type,message}) => {
   )
 }
 
-=======
-import React from 'react'
-import { Alert } from '@mui/material'
-import { useDispatch, useSelector } from 'react-redux'
-import { uiActions } from '../features/uiSlice';
-
-const Notification = ({type,message}) => {
-    const dispatch = useDispatch();
-    const notification = useSelector(state => state.ui.notification);
-    const handleClose =()=>{
-        dispatch(uiActions.showNotification({
-            open:false
-        }))
-    }
-  return (
-    <div>
-        {notification.open && <Alert onClose={handleClose} severity={type}>{message}</Alert>}
-    </div>
-  )
-}
-
->>>>>>> 8e6b042997d7e9e235ba41d33eeabd0f207c9761
 export default Notification
